@@ -1,15 +1,13 @@
 <!doctype html>
 <html>
-
 <head>
 	<title>
 		나만의 공간(HTML5)
 	</title>
 	<style>
-	@import "index.css"
-</style>
+		@import "index.css";
+	</style>
 </head>
-
 <body>
 	<header id="title">
 		<h1>나만의 공간</h1>
@@ -34,17 +32,41 @@
 
 	<hr>
 	<section id="myGame">
-		<h2 >자작 게임</h2>
+		<h2>자작 게임</h2>
 		<ul>
-			<li><h3>콩의 딜레마(The dilemma of beans)</h3>
-				<h4><a href="https://drive.google.com/file/d/1tga6O_gJMPFmrsgggXAvrVuP6NjrLqdN/view?usp=sharing" target="_blank">게임 클라이언트 다운(Google Drive)</a>
+			<li>
+				<h3>
+					콩의 딜레마(The dilemma of beans)
+				</h3>
+				<h4>
+					<p>
+						소켓프로그래밍을 공부하고 첫번째로 만든 서버-클라 구조로 설계된 간단한 심리게임
+					</p>
+					<a href="https://drive.google.com/file/d/1tga6O_gJMPFmrsgggXAvrVuP6NjrLqdN/view?usp=sharing" target="_blank">
+						게임 클라이언트 다운(Google Drive)</a>
 					<br>
-					<a href="https://github.com/AINukeHere/WebTest/releases/download/1.1/The.dilemma.of.beans.exe">
-					게임 클라이언트 다운(Local File)</a>
+					<a href="https://github.com/AINukeHere/WebTest/releases/download/1.1/The.dilemma.of.beans.exe" target="_blank">
+						게임 클라이언트 다운(Local File)</a>
 				</h4>
 			</li>
-			<li><h3>System Control</h3>
-				<h4><a href="https://drive.google.com/file/d/1px9u_ZG8fSTESc2LIzDXVUzeXnuRr2Q4/view?usp=sharing" target="_blank">게임 클라이언트 다운(Google Drive)</a>
+			<li>
+				<h3>
+					System Control
+				</h3>
+				<p>
+					Factorio에서 영감을 받아 제작하다 현재는 UnrealEngine의 BluePrint에 가까워진 게임. 
+					게임 프로그래밍 게임이다. 그래프로 설계되어 동작하는 게임안에서 게임 동작구조를 직접 변경하여 게임을 풀어나간다.
+					최종적인 형태는 UnityEngine의 구조를 이해하기위한 게임이 될 것 같다.
+				</p>
+				<h3>인게임 스크린샷</h3>
+				<img width="480px" height="270px" src="SystemControl_GamePlayImage.png"/>
+				<h4>
+					<a href="https://ainukehere.github.io/SystemControl_WebPlay" target="_blank">웹에서 바로 플레이하기</a>
+					<br>주의) 우측 하단 전체화면 아이콘을 눌러 전체화면으로 진입해야 Alt 입력이 정상적으로 처리됩니다.
+				</h4>
+				<!-- <iframe width="1920px" height="1080p" src="https://ainukehere.github.io/SystemControl_WebPlay"></iframe> -->
+				<h4>
+					<a href="https://drive.google.com/file/d/1px9u_ZG8fSTESc2LIzDXVUzeXnuRr2Q4/view?usp=sharing" target="_blank">게임 클라이언트 다운(Windows)</a>
 				</h4>
 			</li>
 		</ul>
@@ -89,100 +111,100 @@
 					<audio controls>
 						<source src="[Glitch Hop or 110BPM] - Tristam - Till Its Over [Monstercat Release].mp3" type="audio/mpeg">
 							Your browser does not support the audio element.
-						</audio>
-					</li>
-				</ul>
-			</section>
+					</audio>
+				</li>
+			</li>
+		</ul>
+	</section>
 
-			<hr>
+	<hr>
 
-			<section id="myFavoriteVides">
-				<h2 style="color:blue"> My Favorite Videos (powered by youtube for iframe)</h2>
-				<ul style="list-style-type:square" font-size="10px">
-					<li>
-						Amateur
-						<br>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/JzqumbhfxRo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</li>
-					<li id="scaleOfUniverse">
-						우주의 크기
-						<br>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/Kkj_VFriXPI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</li>
-					<li>
-						전쟁인도자: 제이나
-						<br>
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/bgmNr57tK24" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-					</li>
-				</ul>
-			</section>
-
-			<hr>
-
-			<aside>
-				<h3 id="formPractice"> 웹 폼 연습</h3>
-				<form name="login">
-					ID <input type="text">
-					PW<input type="password">
-					<input type="submit",value="submit"><br>
-					E-mail <input type="email" placeholder="name@example.com"><br><br>
-					<textarea placeholder="leave message"></textarea>
-				</form>
+	<section id="myFavoriteVides">
+		<h2 style="color:blue"> My Favorite Videos (powered by youtube for iframe)</h2>
+		<ul style="list-style-type:square" font-size="10px">
+			<li>
+				Amateur
 				<br>
-				<form>
-					나라 : 
-					<select name="Contry" id="countries">
-						<option value="1">일본</option>
-						<option value="2">미국</option>
-						<option value="3">영국</option>
-					</select>
-				</form>
-			</aside>
-			<hr>
-
-			<aside>
-				<h3 id="animationPractice"> 애니메이션 연습</h3>
-				<div class="movingObj"></div>
-			</aside>
-
-			<script>
-				var win=null;
-				function showHTML() {
-					if(win == null || win.closed)
-						win = window.open("", "outWin", "width=800,height=600");
-
-					var textArea = document.getElementById("srcText");
-					win.document.open();
-					win.document.write(textArea.value);
-					win.document.close();
-				}
-			</script>
-
-			<hr>
-
-			<aside>
-				<h3>HTML 문서 작성기 만들기 </h3>
-				<p>아래에 HTML 문서를 작성하고 버튼을 클릭해 보세요.
-				새 윈도우에 HTML 문서가 출력됩니다.</p>
-				<textarea id="srcText" rows="10" cols="40" placeholder="<html>...">&lt;html&gt;&lt;head&gt;&lt;title&gt;TITLE&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;BODY&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</textarea>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/JzqumbhfxRo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</li>
+			<li id="scaleOfUniverse">
+				우주의 크기
 				<br>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Kkj_VFriXPI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</li>
+			<li>
+				전쟁인도자: 제이나
 				<br>
-				<button onclick="showHTML()">HTML 문서 출력하기</button>
-			</aside>
-			<hr>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/bgmNr57tK24" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</li>
+		</ul>
+	</section>
 
-			<aside>
-				<h3>Tick Tec Toe</h3>
-				<iframe width="560" height="315" src="tugame01.html"></iframe>
-			</aside>
-			<hr>
+	<hr>
 
-			<footer>
-				작성자 : 천재일까<br>
-				업데이트일자 : 2018년 10월 07일<br>
-				E-mail : iii4625@naver.com<br>
-				blog : <a href="https://blog.naver.com/iii4625" target="_blank">https://blog.naver.com/iii4625</a><br>
-			</footer>
-		</body>
+	<aside>
+		<h3 id="formPractice"> 웹 폼 연습</h3>
+		<form name="login">
+			ID <input type="text">
+			PW<input type="password">
+			<input type="submit",value="submit"><br>
+			E-mail <input type="email" placeholder="name@example.com"><br><br>
+			<textarea placeholder="leave message"></textarea>
+		</form>
+		<br>
+		<form>
+			나라 : 
+			<select name="Contry" id="countries">
+				<option value="1">일본</option>
+				<option value="2">미국</option>
+				<option value="3">영국</option>
+			</select>
+		</form>
+	</aside>
+	<hr>
 
-		</html>
+	<aside>
+		<h3 id="animationPractice"> 애니메이션 연습</h3>
+		<div class="movingObj"></div>
+	</aside>
+
+	<script>
+		var win=null;
+		function showHTML() {
+			if(win == null || win.closed)
+				win = window.open("", "outWin", "width=800,height=600");
+
+			var textArea = document.getElementById("srcText");
+			win.document.open();
+			win.document.write(textArea.value);
+			win.document.close();
+		}
+	</script>
+
+	<hr>
+
+	<aside>
+		<h3>HTML 문서 작성기 만들기 </h3>
+		<p>아래에 HTML 문서를 작성하고 버튼을 클릭해 보세요.
+		새 윈도우에 HTML 문서가 출력됩니다.</p>
+		<textarea id="srcText" rows="10" cols="40" placeholder="<html>...">&lt;html&gt;&lt;head&gt;&lt;title&gt;TITLE&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;h1&gt;BODY&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;</textarea>
+		<br>
+		<br>
+		<button onclick="showHTML()">HTML 문서 출력하기</button>
+	</aside>
+	<hr>
+
+	<aside>
+		<h3>Tick Tec Toe</h3>
+		<iframe width="560" height="315" src="tugame01.html"></iframe>
+	</aside>
+	<hr>
+
+	<footer>
+		작성자 : 천재일까<br>
+		업데이트일자 : 2018년 10월 07일<br>
+		E-mail : iii4625@naver.com<br>
+		blog : <a href="https://blog.naver.com/iii4625" target="_blank">https://blog.naver.com/iii4625</a><br>
+	</footer>
+</body>
+</html>
