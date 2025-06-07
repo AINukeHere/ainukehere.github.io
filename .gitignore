@@ -176,3 +176,5 @@ SReplay/data/
 SReplay/data-mining/
 *.crx
 *.pem
+
+dump.txt
