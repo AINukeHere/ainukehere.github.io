@@ -2,26 +2,48 @@
 <html lang="en">
     <head>
         <style>
-            body {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
             }
 
-            video, img{
+            #content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+
+            video, img {
                 max-width: 100%;
+                max-height: 100%;
+                width: auto;
                 height: auto;
+                object-fit: contain;
             }
         </style>
     </head>
     <body>
+        <div id="content" style="border: 1px solid black;">
+        </div>
         <script>
+            function createVideoElement(src){
+                const contentDiv = document.querySelector("#content");
+                const videoElementCreateStr = `<video src="${src}" muted loop autoplay playsinline preload="none"></video>`;
+                contentDiv.innerHTML = videoElementCreateStr;
+            }
+            
             switch (decodeURI(location.hash)) {
                 case "#VODMaster Stat Graph":
-                    document.write('<video src="VODMaster Stat Graph.mp4" autoplay muted loop playsinline preload="none" aria-label="클립 탐색기 사용 예"></video>');
+                    createVideoElement("VODMaster Stat Graph.mp4");
                     break;
                 case "#VODMaster Stat Graph Official":
-                    document.write('<video src="VODMaster Stat Graph Official.mp4" autoplay muted loop playsinline preload="none" aria-label="클립 탐색기 사용 예"></video>');
+                    createVideoElement("VODMaster Stat Graph Official.mp4");
                     break;
                 default:
                     console.log("No matching hash found.", location.hash);
