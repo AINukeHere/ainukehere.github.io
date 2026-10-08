@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            switch (decodeURI(location.hash)) {
+                case "#VODMaster Stat Graph":
+                    document.write('<video src="VODMaster Stat Graph.mp4" autoplay muted loop playsinline preload="none" aria-label="클립 탐색기 사용 예"></video>');
+                    break;
+                case "#VODMaster Stat Graph Official":
+                    document.write('<video src="VODMaster Stat Graph Official.mp4" autoplay muted loop playsinline preload="none" aria-label="클립 탐색기 사용 예"></video>');
+                    break;
+                default:
+                    console.log("No matching hash found.", location.hash);
+                    break;
+            }
+        </script>
+    </body>
+</html>
