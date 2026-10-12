@@ -4,12 +4,19 @@
         <title>Personal Page Main Container</title>
     </head>
     <body>
+        <div>
+            <h1>Personal Page</h1>
+            <p>Welcome to your personal page!</p>
+            <p id="target"></p>
+        </div>
         <script>
             window.addEventListener("message", function(event) {
                 if (event.data) {
                     console.log(event.data);
                 }
+                document.getElementById("target").innerText = event.data;
             });
+
             console.log("event listener added");
         </script>
     </body>
